@@ -1,0 +1,347 @@
+/**
+ * Page name
+ * Copyright 2017
+ * Author
+ * Licensed 
+ */
+/*------------------------------------*\
+    Content
+\*------------------------------------*/
+/**
+ * Content............You're reading it!
+ * Globel...............Set common style
+ * Layout...........Set grid
+ * Components...........Set components styles
+ */
+
+
+/*------------------------------------*\
+    Globel
+\*------------------------------------*/
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,
+body {
+    font-family: 微軟正黑體;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+}
+
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.row:after {
+    padding-top: 15px;
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.col-lg-6,
+.col-lg-4,
+.col-lg-3,
+.col-md-6,
+.col-md-12,
+.col-lg-8,
+.col-sm-12 {
+    float: left;
+    /*border: 1px solid red;*/
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.col-lg-8 {
+    width: 66.6666666%;
+}
+
+.col-lg-6 {
+    width: 50%;
+}
+
+.col-lg-4 {
+    width: 33.3333333%;
+}
+
+.col-lg-3 {
+    width: 25%;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+
+/*------------------------------------*\
+    Components
+\*------------------------------------*/
+.container {
+    /* 可壓縮的寬度 */
+    max-width: 1000px;
+    /*border: 1px solid #ccc;*/
+    height: 100%;
+    margin: 0 auto;
+    /* RWD 內容與設備邊緣間的距離 */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+
+/*body-container*/
+
+.main{
+    background-color: #eee;
+}
+.wrap .container{
+    background-color: #fff;
+}
+
+
+.wrap .header-container{
+    background-color: #111;
+}
+
+.logo .site-title {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-image: url('../images/common/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.header .wrap {
+    background-color: #111;
+}
+
+/*navbar*/
+.navbar {
+    height: 48px;
+    background-color: #333;
+
+    width: 100%;
+}
+
+.navbar .nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar .nav .nav-item {
+    float: left;
+    margin-right: 15px;
+}
+
+.navbar .nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar .nav .nav-link {
+    color: #fefefe;
+    display: block;
+    font-size: 18px;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+/* image-container */
+.image-container {
+    width: 100%;
+}
+
+.image-container-250 {
+    width: 250px;
+}
+
+.article-row{
+    display: flex;
+}
+
+.row .border-bottom:after {
+    padding-top: 15px;
+    content: '';
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.mainbar .image-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 58%;
+    /*border: 1px solid;*/
+}
+
+
+.sidebar .image-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 64%;
+}
+
+
+
+.image-container .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*jumbotron*/
+.owl-conten .image-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 60%;
+}
+.owl-conten {
+    padding-top: 15px;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    /* RWD 內容與設備邊緣間的距離 */
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.owl-conten .heading {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.intro {
+    width: 65%;
+    /*margin-left:32px;*/
+    /*border: 1px solid;*/
+}
+
+.container .heading {
+    font-size: 24px;
+    color: #111;
+}
+
+.container .para {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.container .date {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #999;
+}
+
+.container .more {
+    margin-top: 8px;
+    font-size: 10px;
+    color: #0065bb;
+}
+
+.sidebar {
+
+    /*border: 1px solid #ccc;*/
+    height: 100%;
+    /*margin: 0 auto;*/
+    /* RWD 內容與設備邊緣間的距離 */
+    padding-left: 16px;
+}
+
+
+.sidebar .heading {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    transform: translate(0, -100%);
+}
+
+.sidebar .title {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer{
+    background-color: #eee;
+}
+.copyright{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.copyright .para{
+    display: inline-block;
+    
+}
