@@ -217,7 +217,8 @@ a {
     display: block;
     clear: both;
     border-bottom: 1px solid #ccc;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 
@@ -312,7 +313,7 @@ a {
     font-size: 10px;
     color: #0065bb;
 }
-
+/*sidebar*/
 .sidebar {
 
     /*border: 1px solid #ccc;*/
@@ -337,7 +338,7 @@ a {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+/*footer*/
 .footer {
     background-color: #eee;
 }
@@ -355,7 +356,7 @@ a {
 
 /*pagination*/
 .pages{
-        text-align: center;
+    text-align: center;
 }
 
 .pagination {
@@ -368,18 +369,19 @@ a {
     display: inline;
 }
 
-.pagination li a {
-    color: black;
+.pagination .number {
+    color: #0065bb;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
-    border: 1px solid grey;
+    border: 1px solid #ddd;
 }
 
-.pagination li a.active {
-    /*background-color: #4CAF50;*/
-    color: #0065bb;
+.pagination .number.active {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    color: white;
 }
 
 .pagination li a:hover:not(.active) {
