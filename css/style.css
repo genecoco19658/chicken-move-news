@@ -103,11 +103,12 @@ a {
     padding-left: 0;
     padding-right: 0;
 }
-.padding-top-50{
+
+.padding-top-50 {
     padding-top: 50px;
 }
 
-.margin-top-20{
+.margin-top-20 {
     margin-top: 20px;
 }
 
@@ -130,15 +131,16 @@ a {
 
 /*body-container*/
 
-.main{
+.main {
     background-color: #eee;
 }
-.wrap .container{
+
+.wrap .container {
     background-color: #fff;
 }
 
 
-.wrap .header-container{
+.wrap .header-container {
     background-color: #111;
 }
 
@@ -204,16 +206,18 @@ a {
     width: 250px;
 }
 
-.article-row{
-    display: flex;
+.article-row {
+    display: flex;    
+    flex-wrap: wrap;
 }
 
-.row .border-bottom:after {
+.border-bottom:after {
     padding-top: 15px;
     content: '';
     display: block;
     clear: both;
     border-bottom: 1px solid #ccc;
+    width: 100%;
 }
 
 
@@ -254,6 +258,7 @@ a {
     width: 100%;
     padding-top: 60%;
 }
+
 .owl-conten {
     padding-top: 15px;
     max-width: 1000px;
@@ -268,9 +273,9 @@ a {
 .owl-conten .heading {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    overflow : hidden;
-    text-overflow : ellipsis;
-    white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -321,9 +326,9 @@ a {
 .sidebar .heading {
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    overflow : hidden;
-    text-overflow : ellipsis;
-    white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     transform: translate(0, -100%);
 }
 
@@ -333,15 +338,61 @@ a {
     margin-bottom: 15px;
 }
 
-.footer{
+.footer {
     background-color: #eee;
 }
-.copyright{
+
+.copyright {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
 }
-.copyright .para{
+
+.copyright .para {
     display: inline-block;
-    
+
 }
+
+/*pagination*/
+.pages{
+        text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid grey;
+}
+
+.pagination li a.active {
+    /*background-color: #4CAF50;*/
+    color: #0065bb;
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
